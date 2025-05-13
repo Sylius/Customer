@@ -59,7 +59,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\Sylius\\Component\\Customer\\": "Tests/"
+            "Tests\\Sylius\\Component\\Customer\\": "tests/"
         }
     },
     "repositories": [
