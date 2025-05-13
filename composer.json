@@ -36,7 +36,7 @@
         "sylius/resource": "^1.12"
     },
     "require-dev": {
-        "phpspec/phpspec": "^7.5",
+        "phpunit/phpunit": "^10.5",
         "icanhazstring/composer-unused": "^0.8.11"
     },
     "config": {
@@ -59,7 +59,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Sylius\\Component\\Customer\\spec\\": "spec/"
+            "Tests\\Sylius\\Component\\Customer": "Tests/"
         }
     },
     "repositories": [
