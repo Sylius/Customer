@@ -27,12 +27,12 @@ final class CustomerGroupTest extends TestCase
         $this->customerGroup = new CustomerGroup();
     }
 
-    public function testShouldImplementsCustomerGroupInterface(): void
+    public function testImplementsCustomerGroupInterface(): void
     {
         $this->assertInstanceOf(CustomerGroupInterface::class, $this->customerGroup);
     }
 
-    public function testShouldHasNoNameByDefault(): void
+    public function testHasNoNameByDefault(): void
     {
         self::assertNull($this->customerGroup->getName());
     }

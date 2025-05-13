@@ -28,7 +28,7 @@ final class CustomerTest extends TestCase
         $this->customer = new Customer();
     }
 
-    public function testShouldImplementCustomerInterface(): void
+    public function testImplementCustomerInterface(): void
     {
         self::assertInstanceOf(CustomerInterface::class, $this->customer);
     }
@@ -51,7 +51,7 @@ final class CustomerTest extends TestCase
         self::assertSame('Thatch', $this->customer->getLastName());
     }
 
-    public function testFullNameShoudBeMutable(): void
+    public function testFullNameShouldBeMutable(): void
     {
         $this->customer->setFirstName('Edward');
         $this->customer->setLastName('Kenway');
@@ -90,7 +90,7 @@ final class CustomerTest extends TestCase
         self::assertTrue($this->customer->isMale());
     }
 
-    public function testShouldHasNoGroupByDefault(): void
+    public function testHasNoGroupByDefault(): void
     {
         self::assertNull($this->customer->getGroup());
     }
