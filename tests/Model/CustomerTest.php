@@ -28,7 +28,7 @@ final class CustomerTest extends TestCase
         $this->customer = new Customer();
     }
 
-    public function testImplementCustomerInterface(): void
+    public function testImplementsCustomerInterface(): void
     {
         self::assertInstanceOf(CustomerInterface::class, $this->customer);
     }
